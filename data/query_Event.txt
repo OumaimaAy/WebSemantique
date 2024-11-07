@@ -1,0 +1,14 @@
+PREFIX ex: <http://www.semanticweb.org/nvsar/ontologies/2024/9/untitled-ontology-3#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?event ?feedbackContent ?feedbackDate
+WHERE {
+  ?event rdf:type ex:Event .
+  ?event ex:hasFeedback ?feedback .
+
+  ?feedback rdf:type ex:Feedback .
+  ?feedback ex:contentFeedback ?feedbackContent .
+  ?feedback ex:dateCreationFeedback ?feedbackDate .
+
+  FILTER (xsd:dateTime(?feedbackDate) = "2024-11-06T21:00:00"^^xsd:dateTime)
+}

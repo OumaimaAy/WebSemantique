@@ -1,0 +1,3152 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Admin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CategoryWaste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Centers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalRecycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeliveryPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DelivreyAgence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepotCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FeedBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalRecycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reclamation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecycledContent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecycledProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecyclingCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecyclingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalesCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeAwareness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeNotif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TypeReclamation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeeklyEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Asigned_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Dispo_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Participate_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Recieve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Send"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Use"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Write"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#add"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#added_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#choose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#collect_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliver_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#distribute_waste_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_as_deliver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_as_feedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_as_planning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_recycling_pourcentage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_the_response"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_type_notification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_type_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_typeof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#made_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#make_collection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produced_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recieve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sales"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#send_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#target_the"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#work_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#working_in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ContentFeedback"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Experation_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ObjectifTypeAwarness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Title__Program"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#additional_cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address_collector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#audienceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#availability_statusDelivPers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#category_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#closing_hours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#collection_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#collection_location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contactInfo_collector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#content_description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#contenu_responseRec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateCertification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateCreationFeedback"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateCreation_Notif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateParticipation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateReclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateResponse"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date_WeeklyEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date_of_collection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date_ofcreation_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date_program"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionCategoryWaste"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionMaterialWaste"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionRecyclingMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionTraining"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descriptionTypeReclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description_Collection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description_channel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description_reclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description_typeNotif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#durationTraining"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email_delivPers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#image"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#langueTarget"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#levelCertification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#likes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manager_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matieres_premieres"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matieres_premieres_MechanicalRecy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matricule_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#max_participants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#message_notif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameCategorywaste"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameCertification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameChannel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameDelivPers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameMaterialWaste"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameParticipation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameRecyclingMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameTypeAwarness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nameTypeNotif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name_Collection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name_collector"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nomTypeReclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#opening_hours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#organizer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#password"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#percentage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phoneNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phone_numberDelivPers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#produits_finaux"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#produits_finaux_MechanicalRecy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status_response"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statut_Reclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temps_de_compostage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titleTraining"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title_notification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title_weeklyEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#titre_reclamation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#total_quantity_available"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trainerTraining"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#typeCenter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_de_compostage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_de_procede"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type_de_traitement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vehicle_model"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Admin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CategoryWaste2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Center1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Certication1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Certification2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Composting1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Composting2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reclamation1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reclamation2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecycledContent_Prod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecyclingMethod1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RecyclingMethod2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#categoryWaste1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#category_Prod1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#center2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collection1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collection2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collector1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collector2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comment1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comment2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depotCenter1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depotCenter2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#feedback1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#feedback2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#notif1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#notif2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publication1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#publication2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#recycledProd1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#response1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#response2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#training1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#training2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#waste1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#waste2"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Admin"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#organise"/>
+            <Class IRI="#Training"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Admin"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#publish"/>
+            <Class IRI="#Publication"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Client"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Participate_at"/>
+            <Class IRI="#Event"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Client"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Send"/>
+            <Class IRI="#Reclamation"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Client"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#add"/>
+            <Class IRI="#Waste"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Collection"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Asigned_to"/>
+            <Class IRI="#DepotCenter"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DeliveryPerson"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#working_in"/>
+            <Class IRI="#DelivreyAgence"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DelivreyAgence"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#deliver_to"/>
+            <Class IRI="#RecyclingCenter"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DelivreyAgence"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_as_deliver"/>
+            <Class IRI="#DeliveryPerson"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DelivreyAgence"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#offer"/>
+            <Class IRI="#SpecialService"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DepotCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#choose"/>
+            <Class IRI="#DelivreyAgence"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DepotCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#collect_with"/>
+            <Class IRI="#vehicle"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DepotCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#distribute_waste_to"/>
+            <Class IRI="#RecyclingCenter"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DepotCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#make_collection"/>
+            <Class IRI="#Collection"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_as_feedback"/>
+            <Class IRI="#FeedBack"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_as_planning"/>
+            <Class IRI="#Program"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FeedBack"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#added_from"/>
+            <Class IRI="#User"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Notification"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_type_notification"/>
+            <Class IRI="#TypeNotif"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Notification"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#send_by"/>
+            <Class IRI="#Channel"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Publication"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_typeof"/>
+            <Class IRI="#TypeAwareness"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Publication"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#target_the"/>
+            <Class IRI="#Target"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Reclamation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_the_response"/>
+            <Class IRI="#Response"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Reclamation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_type_of"/>
+            <Class IRI="#TypeReclamation"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecycledProduct"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Dispo_in"/>
+            <Class IRI="#SalesCenter"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecycledProduct"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_recycling_pourcentage"/>
+            <Class IRI="#RecycledContent"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecycledProduct"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#made_with"/>
+            <Class IRI="#Category"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecycledProduct"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#produced_from"/>
+            <Class IRI="#RecyclingCenter"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecyclingCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Use"/>
+            <Class IRI="#RecyclingMethod"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RecyclingCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#recieve"/>
+            <Class IRI="#Waste"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SalesCenter"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#sales"/>
+            <Class IRI="#RecycledProduct"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#User"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#Write"/>
+            <Class IRI="#Comment"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#User"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#recieve"/>
+            <Class IRI="#Notification"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#collector"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#collect"/>
+            <Class IRI="#Waste"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#collector"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#work_in"/>
+            <Class IRI="#Collection"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Admin"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#RecycledProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CategoryWaste"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <Class IRI="#Training"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Channel"/>
+        <Class IRI="#Notification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalRecycling"/>
+        <Class IRI="#RecyclingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Client"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comment"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composting"/>
+        <Class IRI="#RecyclingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveryPerson"/>
+        <Class IRI="#DelivreyAgence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepotCenter"/>
+        <Class IRI="#Centers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FeedBack"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalRecycling"/>
+        <Class IRI="#RecyclingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Program"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecycledContent"/>
+        <Class IRI="#RecycledProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecyclingCenter"/>
+        <Class IRI="#Centers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Response"/>
+        <Class IRI="#Reclamation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalesCenter"/>
+        <Class IRI="#Centers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialService"/>
+        <Class IRI="#DelivreyAgence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subject"/>
+        <Class IRI="#Training"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Target"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypeAwareness"/>
+        <Class IRI="#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypeNotif"/>
+        <Class IRI="#Notification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TypeReclamation"/>
+        <Class IRI="#Reclamation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeeklyEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#collector"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Admin"/>
+        <Class IRI="#Client"/>
+    </DisjointClasses>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Admin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admin@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Admin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Admin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#password"/>
+        <NamedIndividual IRI="#Admin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admin123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Admin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#username"/>
+        <NamedIndividual IRI="#Admin"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">admin</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionCategoryWaste"/>
+        <NamedIndividual IRI="#CategoryWaste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">desc2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameCategorywaste"/>
+        <NamedIndividual IRI="#CategoryWaste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sousse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center1@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center1.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manager_name"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">farah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">52444666</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#typeCenter"/>
+        <NamedIndividual IRI="#Center1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCertification"/>
+        <NamedIndividual IRI="#Certication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15/10/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCertification"/>
+        <NamedIndividual IRI="#Certication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameCertification"/>
+        <NamedIndividual IRI="#Certication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certif1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCertification"/>
+        <NamedIndividual IRI="#Certification2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25/09/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameCertification"/>
+        <NamedIndividual IRI="#Certification2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Certif2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temps_de_compostage"/>
+        <NamedIndividual IRI="#Composting1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2 heures</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_de_compostage"/>
+        <NamedIndividual IRI="#Composting1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">type1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#temps_de_compostage"/>
+        <NamedIndividual IRI="#Composting2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1 heure</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type_de_compostage"/>
+        <NamedIndividual IRI="#Composting2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">type2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">02/12/2024 10:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Event1 desciption</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image22.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_participants"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#organizer"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sirine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Event1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">19/01/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">event hallowyn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image2.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#location"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">kef</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_participants"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#organizer"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sarra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Event2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateReclamation"/>
+        <NamedIndividual IRI="#Reclamation1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01/10/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_reclamation"/>
+        <NamedIndividual IRI="#Reclamation1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">réclamtion urgente</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#statut_Reclamation"/>
+        <NamedIndividual IRI="#Reclamation1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">traité</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateReclamation"/>
+        <NamedIndividual IRI="#Reclamation2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">05/09/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_reclamation"/>
+        <NamedIndividual IRI="#Reclamation2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">reclamation2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#statut_Reclamation"/>
+        <NamedIndividual IRI="#Reclamation2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">non traitée</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content_description"/>
+        <NamedIndividual IRI="#RecycledContent_Prod"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">80% recycled</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#percentage"/>
+        <NamedIndividual IRI="#RecycledContent_Prod"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">80 </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionRecyclingMethod"/>
+        <NamedIndividual IRI="#RecyclingMethod1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RecyclingMethod11111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameRecyclingMethod"/>
+        <NamedIndividual IRI="#RecyclingMethod1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RecyclingMeth1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionRecyclingMethod"/>
+        <NamedIndividual IRI="#RecyclingMethod2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RecyclingMethod2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameRecyclingMethod"/>
+        <NamedIndividual IRI="#RecyclingMethod2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Recycling2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionCategoryWaste"/>
+        <NamedIndividual IRI="#categoryWaste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">desc1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameCategorywaste"/>
+        <NamedIndividual IRI="#categoryWaste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category_description"/>
+        <NamedIndividual IRI="#category_Prod1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">this is wood category</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#category_Prod1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center2@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center2.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manager_name"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">chahd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">center2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">9:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">58666644</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#typeCenter"/>
+        <NamedIndividual IRI="#center2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_channel"/>
+        <NamedIndividual IRI="#channel1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">envoi par sms</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameChannel"/>
+        <NamedIndividual IRI="#channel1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sms</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_channel"/>
+        <NamedIndividual IRI="#channel2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">envoi par mail</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nameChannel"/>
+        <NamedIndividual IRI="#channel2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mailing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date_of_collection"/>
+        <NamedIndividual IRI="#collection1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01/03/2025 09:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_Collection"/>
+        <NamedIndividual IRI="#collection1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">this is collection 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name_Collection"/>
+        <NamedIndividual IRI="#collection1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">collection1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date_of_collection"/>
+        <NamedIndividual IRI="#collection2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">02/11/2025 09:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description_Collection"/>
+        <NamedIndividual IRI="#collection2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">this is collection 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name_Collection"/>
+        <NamedIndividual IRI="#collection2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">collection 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address_collector"/>
+        <NamedIndividual IRI="#collector1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name_collector"/>
+        <NamedIndividual IRI="#collector1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">collector 1 </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address_collector"/>
+        <NamedIndividual IRI="#collector2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sousse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name_collector"/>
+        <NamedIndividual IRI="#collector2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">collector 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contentComment</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#likes"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">lu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content"/>
+        <NamedIndividual IRI="#comment2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contentComment2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#likes"/>
+        <NamedIndividual IRI="#comment2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status"/>
+        <NamedIndividual IRI="#comment2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">non lu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image3.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deliveryAgence1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#deliveryAgence1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">22555666</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bizerte</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image6.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">deliveryAgence2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">09:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#deliveryAgence2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">26876444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manager_name"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">chahd </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">depotCenter1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">56888999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total_quantity_available"/>
+        <NamedIndividual IRI="#depotCenter1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sousse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#closing_hours"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">11:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">image2.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manager_name"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sarra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">depotCenter2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#opening_hours"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08:30 AM </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phoneNumber"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">25666333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#total_quantity_available"/>
+        <NamedIndividual IRI="#depotCenter2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContentFeedback"/>
+        <NamedIndividual IRI="#feedback1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">content of feedback 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCreationFeedback"/>
+        <NamedIndividual IRI="#feedback1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">06/11/2024 09:00 PM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContentFeedback"/>
+        <NamedIndividual IRI="#feedback2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">content 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCreationFeedback"/>
+        <NamedIndividual IRI="#feedback2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08/11/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCreation_Notif"/>
+        <NamedIndividual IRI="#notif1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">02/12/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message_notif"/>
+        <NamedIndividual IRI="#notif1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">message1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title_notification"/>
+        <NamedIndividual IRI="#notif1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">notif 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateCreation_Notif"/>
+        <NamedIndividual IRI="#notif2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01/08/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message_notif"/>
+        <NamedIndividual IRI="#notif2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">message2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title_notification"/>
+        <NamedIndividual IRI="#notif2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">notif 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category"/>
+        <NamedIndividual IRI="#publication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">awarness</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content"/>
+        <NamedIndividual IRI="#publication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">content pub1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#publication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">description pub1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tags"/>
+        <NamedIndividual IRI="#publication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tags1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#publication1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">pub1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#category"/>
+        <NamedIndividual IRI="#publication2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">video</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#content"/>
+        <NamedIndividual IRI="#publication2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">content pub 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#publication2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">annonce </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tags"/>
+        <NamedIndividual IRI="#publication2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tags2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#publication2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">publ2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#recycledProd1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">desc prod1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#recycledProd1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">prod1.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#recycledProd1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">prod1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#recycledProd1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantity"/>
+        <NamedIndividual IRI="#recycledProd1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contenu_responseRec"/>
+        <NamedIndividual IRI="#response1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contenuResp1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateResponse"/>
+        <NamedIndividual IRI="#response1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10/06/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status_response"/>
+        <NamedIndividual IRI="#response1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">statusRep1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#contenu_responseRec"/>
+        <NamedIndividual IRI="#response2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contenu1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dateResponse"/>
+        <NamedIndividual IRI="#response2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">08/05/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#status_response"/>
+        <NamedIndividual IRI="#response2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">statusResp2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionTraining"/>
+        <NamedIndividual IRI="#training1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">training1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#durationTraining"/>
+        <NamedIndividual IRI="#training1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2mois</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titleTraining"/>
+        <NamedIndividual IRI="#training1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">spring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#trainerTraining"/>
+        <NamedIndividual IRI="#training1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">chahd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descriptionTraining"/>
+        <NamedIndividual IRI="#training2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">training2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#durationTraining"/>
+        <NamedIndividual IRI="#training2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">3mois</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#titleTraining"/>
+        <NamedIndividual IRI="#training2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">angular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#trainerTraining"/>
+        <NamedIndividual IRI="#training2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">farah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user1@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#password"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user1user1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#username"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user2@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#password"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user2user2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#username"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">user2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#collection_date"/>
+        <NamedIndividual IRI="#waste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">01/10/2024 11:00 AM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#collection_location"/>
+        <NamedIndividual IRI="#waste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#waste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">waste.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantity"/>
+        <NamedIndividual IRI="#waste1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#collection_date"/>
+        <NamedIndividual IRI="#waste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">10/05/2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#collection_location"/>
+        <NamedIndividual IRI="#waste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">tunis el ghazela</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#image"/>
+        <NamedIndividual IRI="#waste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">imageWaste.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantity"/>
+        <NamedIndividual IRI="#waste2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">100</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Asigned_to"/>
+        <Class IRI="#Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Dispo_in"/>
+        <Class IRI="#RecycledProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Participate_at"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Recieve"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Send"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Use"/>
+        <Class IRI="#RecyclingCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Write"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#add"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#added_from"/>
+        <Class IRI="#FeedBack"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#choose"/>
+        <Class IRI="#DepotCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collect"/>
+        <Class IRI="#collector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#collect_with"/>
+        <Class IRI="#DepotCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliver_to"/>
+        <Class IRI="#DelivreyAgence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#distribute_waste_to"/>
+        <Class IRI="#DepotCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_as_deliver"/>
+        <Class IRI="#DelivreyAgence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_as_feedback"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_as_planning"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_recycling_pourcentage"/>
+        <Class IRI="#RecycledProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_the_response"/>
+        <Class IRI="#Reclamation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_type_notification"/>
+        <Class IRI="#Notification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_type_of"/>
+        <Class IRI="#Reclamation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_typeof"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#made_with"/>
+        <Class IRI="#RecycledProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#make_collection"/>
+        <Class IRI="#DepotCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offer"/>
+        <Class IRI="#DelivreyAgence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organise"/>
+        <Class IRI="#Admin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produced_from"/>
+        <Class IRI="#RecycledProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#publish"/>
+        <Class IRI="#Admin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recieve"/>
+        <Class IRI="#RecyclingCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sales"/>
+        <Class IRI="#SalesCenter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#send_by"/>
+        <Class IRI="#Notification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#target_the"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#work_in"/>
+        <Class IRI="#collector"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#working_in"/>
+        <Class IRI="#DeliveryPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Asigned_to"/>
+        <Class IRI="#DepotCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Dispo_in"/>
+        <Class IRI="#SalesCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Participate_at"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Recieve"/>
+        <Class IRI="#Notification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Send"/>
+        <Class IRI="#Reclamation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Use"/>
+        <Class IRI="#RecyclingMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Write"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#add"/>
+        <Class IRI="#Waste"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#added_from"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#choose"/>
+        <Class IRI="#DelivreyAgence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collect"/>
+        <Class IRI="#Waste"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#collect_with"/>
+        <Class IRI="#vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliver_to"/>
+        <Class IRI="#RecyclingCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#distribute_waste_to"/>
+        <Class IRI="#RecyclingCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_as_deliver"/>
+        <Class IRI="#DeliveryPerson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_as_feedback"/>
+        <Class IRI="#FeedBack"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_as_planning"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_recycling_pourcentage"/>
+        <Class IRI="#RecycledContent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_the_response"/>
+        <Class IRI="#Response"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_type_notification"/>
+        <Class IRI="#TypeNotif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_type_of"/>
+        <Class IRI="#TypeReclamation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_typeof"/>
+        <Class IRI="#TypeAwareness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#made_with"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#make_collection"/>
+        <Class IRI="#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offer"/>
+        <Class IRI="#SpecialService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organise"/>
+        <Class IRI="#Training"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produced_from"/>
+        <Class IRI="#RecyclingCenter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#publish"/>
+        <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recieve"/>
+        <Class IRI="#Waste"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sales"/>
+        <Class IRI="#RecycledProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#send_by"/>
+        <Class IRI="#Channel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#target_the"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#work_in"/>
+        <Class IRI="#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#working_in"/>
+        <Class IRI="#DelivreyAgence"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#collection_date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#collection_location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email_delivPers"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#location"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ContentFeedback"/>
+        <Class IRI="#FeedBack"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Experation_date"/>
+        <Class IRI="#SpecialService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ObjectifTypeAwarness"/>
+        <Class IRI="#TypeAwareness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Title__Program"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#additional_cost"/>
+        <Class IRI="#SpecialService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address_collector"/>
+        <Class IRI="#collector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#audienceType"/>
+        <Class IRI="#Target"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#availability_statusDelivPers"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capacity"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capacity"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#category"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#category"/>
+        <Class IRI="#Waste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#category_description"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#closing_hours"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#closing_hours"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#closing_hours"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#closing_hours"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#collection_date"/>
+        <Class IRI="#Waste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#collection_location"/>
+        <Class IRI="#Waste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#contactInfo_collector"/>
+        <Class IRI="#collector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#content_description"/>
+        <Class IRI="#RecycledContent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#contenu_responseRec"/>
+        <Class IRI="#Response"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateCertification"/>
+        <Class IRI="#Certification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateCreationFeedback"/>
+        <Class IRI="#FeedBack"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateCreation_Notif"/>
+        <Class IRI="#Notification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateParticipation"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateReclamation"/>
+        <Class IRI="#Reclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateResponse"/>
+        <Class IRI="#Response"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date_WeeklyEvent"/>
+        <Class IRI="#WeeklyEvent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date_of_collection"/>
+        <Class IRI="#Collection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date_ofcreation_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date_program"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Reclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#RecycledProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#SpecialService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#TypeAwareness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionCategoryWaste"/>
+        <Class IRI="#CategoryWaste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionMaterialWaste"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionRecyclingMethod"/>
+        <Class IRI="#RecyclingMethod"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionSubject"/>
+        <Class IRI="#Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionTraining"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descriptionTypeReclamation"/>
+        <Class IRI="#TypeReclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description_Collection"/>
+        <Class IRI="#Collection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description_channel"/>
+        <Class IRI="#Channel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description_reclamation"/>
+        <Class IRI="#Reclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description_typeNotif"/>
+        <Class IRI="#TypeNotif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#durationTraining"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email_delivPers"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#RecycledProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#image"/>
+        <Class IRI="#Waste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#langueTarget"/>
+        <Class IRI="#Target"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#levelCertification"/>
+        <Class IRI="#Certification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#likes"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manager_name"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manager_name"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#matieres_premieres"/>
+        <Class IRI="#ChemicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#matieres_premieres_MechanicalRecy"/>
+        <Class IRI="#MechanicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#matricule_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#max_participants"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#message_notif"/>
+        <Class IRI="#Notification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#RecycledProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#SpecialService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameCategorywaste"/>
+        <Class IRI="#CategoryWaste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameCertification"/>
+        <Class IRI="#Certification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameChannel"/>
+        <Class IRI="#Channel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameDelivPers"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameMaterialWaste"/>
+        <Class IRI="#Material"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameParticipation"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameRecyclingMethod"/>
+        <Class IRI="#RecyclingMethod"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameSubject"/>
+        <Class IRI="#Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameTypeAwarness"/>
+        <Class IRI="#TypeAwareness"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nameTypeNotif"/>
+        <Class IRI="#TypeNotif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name_Collection"/>
+        <Class IRI="#Collection"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name_collector"/>
+        <Class IRI="#collector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nomTypeReclamation"/>
+        <Class IRI="#TypeReclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#opening_hours"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#opening_hours"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#opening_hours"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#opening_hours"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#organizer"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#password"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#percentage"/>
+        <Class IRI="#RecycledContent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#DelivreyAgence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#RecyclingCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#SalesCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phoneNumber"/>
+        <Class IRI="#collector"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phone_numberDelivPers"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#RecycledProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#produits_finaux"/>
+        <Class IRI="#ChemicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#produits_finaux_MechanicalRecy"/>
+        <Class IRI="#MechanicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantity"/>
+        <Class IRI="#RecycledProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantity"/>
+        <Class IRI="#Waste"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#DeliveryPerson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#SpecialService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status_response"/>
+        <Class IRI="#Response"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statut_Reclamation"/>
+        <Class IRI="#Reclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tags"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temps_de_compostage"/>
+        <Class IRI="#Composting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Publication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titleTraining"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title_notification"/>
+        <Class IRI="#Notification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title_weeklyEvent"/>
+        <Class IRI="#WeeklyEvent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titre_reclamation"/>
+        <Class IRI="#Reclamation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#total_quantity_available"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#trainerTraining"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#typeCenter"/>
+        <Class IRI="#DepotCenter"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_de_compostage"/>
+        <Class IRI="#Composting"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_de_procede"/>
+        <Class IRI="#ChemicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type_de_traitement"/>
+        <Class IRI="#MechanicalRecycling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#username"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vehicle_model"/>
+        <Class IRI="#vehicle"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ContentFeedback"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Experation_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ObjectifTypeAwarness"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Title__Program"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#additional_cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#address_collector"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#audienceType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#availability_statusDelivPers"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#category"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#category_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#closing_hours"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#collection_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#collection_location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contactInfo_collector"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#content"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#content_description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#contenu_responseRec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateCertification"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateCreationFeedback"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateCreation_Notif"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateParticipation"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateReclamation"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateResponse"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date_WeeklyEvent"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date_of_collection"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date_ofcreation_vehicle"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date_program"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionCategoryWaste"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionMaterialWaste"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionRecyclingMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionTraining"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descriptionTypeReclamation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description_Collection"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description_channel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description_reclamation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description_typeNotif"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#durationTraining"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email_delivPers"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#image"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#langueTarget"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#levelCertification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#likes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#manager_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#matieres_premieres"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#matieres_premieres_MechanicalRecy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#matricule_vehicle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#max_participants"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#message_notif"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameCategorywaste"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameCertification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameChannel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameDelivPers"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameMaterialWaste"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameParticipation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameRecyclingMethod"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameSubject"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameTypeAwarness"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nameTypeNotif"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name_Collection"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name_collector"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nomTypeReclamation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#opening_hours"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#organizer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#password"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#percentage"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phoneNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phone_numberDelivPers"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#produits_finaux"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#produits_finaux_MechanicalRecy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status_response"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statut_Reclamation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tags"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#temps_de_compostage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#titleTraining"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title_notification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title_weeklyEvent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#titre_reclamation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#total_quantity_available"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trainerTraining"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#typeCenter"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type_de_compostage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type_de_procede"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type_de_traitement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#username"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#vehicle_model"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

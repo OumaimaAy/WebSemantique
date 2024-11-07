@@ -1,15 +1,24 @@
 package tn.sem.websem;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class EventDto {
     private String title;
     private String description ;
-    private Date date;
+    private LocalDateTime date;
     private String location;
     private String organizer;
     private int max_participants;
     private String image;
+    private String event;
+    public String getEvent() {
+        return event;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
 
     public String getTitle() {
         return title;
@@ -27,11 +36,11 @@ public class EventDto {
         this.description = description;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

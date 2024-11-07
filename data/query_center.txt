@@ -1,0 +1,11 @@
+PREFIX ex: <http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?name
+WHERE {
+  ?Centers rdf:type ex:Centers .
+  ?Centers ex:typeCenter ?typeCenter .
+  ?Centers ex:name ?name .
+
+  FILTER (STR(?typeCenter) = "1")  # Make sure typeCenter is compared as a string
+}

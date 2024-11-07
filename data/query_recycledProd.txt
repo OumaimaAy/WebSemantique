@@ -1,0 +1,11 @@
+PREFIX ex: <http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?name
+WHERE {
+  ?RecycledProduct rdf:type ex:RecycledProduct .  # Select all instances of Event
+  ?RecycledProduct ex:percentage ?percentage .  # Content feedback of the event
+  ?RecycledProduct ex:name ?name .  # Title of the event
+
+  FILTER (STR(?percentage) = "50")  # Filter for "good" content feedback
+}

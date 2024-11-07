@@ -1,18 +1,11 @@
 PREFIX ex: <http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?event ?organizer ?date ?location ?maxParticipants ?description ?image ?title ?ContentFeedback
+SELECT ?title
 WHERE {
-    ?event rdf:type ex:Event .                         # Sélectionner les événements
-    ?event ex:organizer ?organizer .                   # Obtenir l'organisateur
-    ?event ex:date ?date .                             # Obtenir la date de l'événement
-    ?event ex:location ?location .                     # Obtenir le lieu de l'événement
-    ?event ex:max_participants ?maxParticipants .      # Obtenir le nombre de participants
-    ?event ex:description ?description .               # Obtenir la description de l'événement
-    ?event ex:image ?image .                           # Obtenir l'image de l'événement
-    ?event ex:title ?title .
-    ?event ex:ContentFeedback ?ContentFeedback .
-                      # Obtenir le titre de l'événement
-    FILTER (?ContentFeedback = "good")                      # Filtrer par organisateur "sirine"
+  ?event rdf:type ex:Event .  # Select all instances of Event
+  ?event ex:ContentFeedback ?ContentFeedback .  # Content feedback of the event
+  ?event ex:title ?title .  # Title of the event
+
+  FILTER (STR(?ContentFeedback) = "good")  # Filter for "good" content feedback
 }

@@ -30,8 +30,7 @@ import org.apache.jena.query.DatasetFactory;
  */
 public class JenaEngine {
 
-    //static private String RDF = "http://www.semanticweb.org/wassim/ontologies/2024/9/untitled-ontology-17";
-    static private String RDF = "http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1#";
+    static private String RDF = "http://www.semanticweb.org/nvsar/ontologies/2024/9/ontologie1";
 
     /**
      * Charger un modle partir dun fichier owl
